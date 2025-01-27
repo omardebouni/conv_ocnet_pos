@@ -30,7 +30,7 @@ model:
     sample_mode: bilinear
     hidden_size: 32
     local_coord: False
-  pos_encoding: sin_cos
+    pos_encoding: sin_cos
   c_dim: 32
 training:
   out_dir: out/pointcloud/PosEncoding/patch_shapenet_3plane_NoNorm
