@@ -20,10 +20,14 @@ class LocalDecoder(nn.Module):
     '''
 
     def __init__(self, dim=3, c_dim=128,
-                 hidden_size=256, n_blocks=5, leaky=False, sample_mode='bilinear', padding=0.1, unit_size=0.1, local_coord=False, pos_encoding='linear', L=10):
+                 hidden_size=256, n_blocks=5, leaky=False, sample_mode='bilinear', padding=0.1, unit_size=0.1, local_coord=False, pos_encoding='linear', L=10
+                 ,use_siren=False, w0=30):
         super().__init__()
         self.c_dim = c_dim
         self.n_blocks = n_blocks
+
+        self.use_siren = use_siren
+        self.w0 = w0
 
         if c_dim != 0:
             self.fc_c = nn.ModuleList([
@@ -49,12 +53,14 @@ class LocalDecoder(nn.Module):
 
 
         self.blocks = nn.ModuleList([
-            ResnetBlockFC(hidden_size) for i in range(n_blocks)
+            ResnetBlockFC(hidden_size, use_siren=use_siren) for i in range(n_blocks)
         ])
 
         self.fc_out = nn.Linear(hidden_size, 1)
 
-        if not leaky:
+        if self.use_siren:
+            self.actvn = torch.sin
+        elif not leaky:
             self.actvn = F.relu
         else:
             self.actvn = lambda x: F.leaky_relu(x, 0.2)
@@ -132,11 +138,15 @@ class PatchLocalDecoder(nn.Module):
     '''
 
     def __init__(self, dim=3, c_dim=128,
-                 hidden_size=256, leaky=False, n_blocks=5, sample_mode='bilinear', local_coord=False, pos_encoding='linear', unit_size=0.1, padding=0.1, L=10):
+                 hidden_size=256, leaky=False, n_blocks=5, sample_mode='bilinear', local_coord=False, pos_encoding='linear', unit_size=0.1, padding=0.1, L=10,
+                 use_siren=False, w0=30):
         super().__init__()
         self.c_dim = c_dim
         self.n_blocks = n_blocks
         self.L = L
+        
+        self.use_siren = use_siren
+        self.w0 = w0
 
         if c_dim != 0:
             self.fc_c = nn.ModuleList([
@@ -146,10 +156,12 @@ class PatchLocalDecoder(nn.Module):
         #self.fc_p = nn.Linear(dim, hidden_size)
         self.fc_out = nn.Linear(hidden_size, 1)
         self.blocks = nn.ModuleList([
-            ResnetBlockFC(hidden_size) for i in range(n_blocks)
+            ResnetBlockFC(hidden_size,use_siren=self.use_siren) for i in range(n_blocks)
         ])
 
-        if not leaky:
+        if self.use_siren:
+            self.actvn = torch.sin
+        elif not leaky:
             self.actvn = F.relu
         else:
             self.actvn = lambda x: F.leaky_relu(x, 0.2)
@@ -185,7 +197,7 @@ class PatchLocalDecoder(nn.Module):
         p_n = p['p_n']
         p = p['p']
 
-        print('now in decoder, P is: ', p.shape)
+        # print('now in decoder, P is: ', p.shape)
 
         if self.c_dim != 0:
             plane_type = list(c_plane.keys())

@@ -7,7 +7,7 @@ from src.conv_onet import models, training
 from src.conv_onet import generation
 from src import data
 from src import config
-from src.common import decide_total_volume_range, update_reso
+from src.common import decide_total_volume_range, update_reso, siren_init
 from torchvision import transforms
 import numpy as np
 
@@ -72,7 +72,9 @@ def get_model(cfg, device=None, dataset=None, **kwargs):
         dim=dim, c_dim=c_dim, padding=padding,
         **decoder_kwargs
     )
-
+    if decoder_kwargs['use_siren']:
+        decoder.apply(lambda m: siren_init(m, w0=decoder_kwargs['w0'], is_first=isinstance(m, nn.Linear) and m == decoder.fc_p))
+    
     if encoder == 'idx':
         encoder = nn.Embedding(len(dataset), c_dim)
     elif encoder is not None:

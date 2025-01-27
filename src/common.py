@@ -3,6 +3,8 @@ import torch
 from src.utils.libkdtree import KDTree
 import numpy as np
 import math
+import torch.nn as nn
+
 
 
 def compute_iou(occ1, occ2):
@@ -435,3 +437,26 @@ class positional_encoding(object):
                 out.append(torch.cos(freq * p))
             p = torch.cat(out, dim=2)
         return p
+    
+
+def siren_init(m, w0=30.0, is_first=False):
+    """
+    Initialize a layer according to SIREN initialization rules.
+    
+    Args:
+        m (nn.Module): The module (typically nn.Linear) to initialize.
+        w0 (float): The frequency scale for SIREN (default is 30).
+        is_first (bool): Whether this is the first layer in the network.
+    """
+    if isinstance(m, nn.Linear):
+        in_features = m.weight.size(1)
+        with torch.no_grad():
+            # First layer has a special initialization
+            if is_first:
+                m.weight.uniform_(-1 / in_features, 1 / in_features)
+            else:
+                limit = math.sqrt(6 / in_features) / w0
+                m.weight.uniform_(-limit, limit)
+            
+            if m.bias is not None:
+                m.bias.fill_(0.0)
