@@ -806,7 +806,7 @@ typedef struct {
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":743
  * # in Cython to enable them only on the right systems.
- * 
+ *
  * ctypedef npy_int8       int8_t             # <<<<<<<<<<<<<<
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t
@@ -814,7 +814,7 @@ typedef struct {
 typedef npy_int8 __pyx_t_5numpy_int8_t;
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":744
- * 
+ *
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t             # <<<<<<<<<<<<<<
  * ctypedef npy_int32      int32_t
@@ -842,7 +842,7 @@ typedef npy_int64 __pyx_t_5numpy_int64_t;
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":750
  * #ctypedef npy_int128     int128_t
- * 
+ *
  * ctypedef npy_uint8      uint8_t             # <<<<<<<<<<<<<<
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t
@@ -850,7 +850,7 @@ typedef npy_int64 __pyx_t_5numpy_int64_t;
 typedef npy_uint8 __pyx_t_5numpy_uint8_t;
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":751
- * 
+ *
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t             # <<<<<<<<<<<<<<
  * ctypedef npy_uint32     uint32_t
@@ -878,7 +878,7 @@ typedef npy_uint64 __pyx_t_5numpy_uint64_t;
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":757
  * #ctypedef npy_uint128    uint128_t
- * 
+ *
  * ctypedef npy_float32    float32_t             # <<<<<<<<<<<<<<
  * ctypedef npy_float64    float64_t
  * #ctypedef npy_float80    float80_t
@@ -886,7 +886,7 @@ typedef npy_uint64 __pyx_t_5numpy_uint64_t;
 typedef npy_float32 __pyx_t_5numpy_float32_t;
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":758
- * 
+ *
  * ctypedef npy_float32    float32_t
  * ctypedef npy_float64    float64_t             # <<<<<<<<<<<<<<
  * #ctypedef npy_float80    float80_t
@@ -908,7 +908,7 @@ typedef npy_long __pyx_t_5numpy_int_t;
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t             # <<<<<<<<<<<<<<
  * ctypedef npy_longlong   longlong_t
- * 
+ *
  */
 typedef npy_longlong __pyx_t_5numpy_long_t;
 
@@ -916,14 +916,14 @@ typedef npy_longlong __pyx_t_5numpy_long_t;
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t
  * ctypedef npy_longlong   longlong_t             # <<<<<<<<<<<<<<
- * 
+ *
  * ctypedef npy_ulong      uint_t
  */
 typedef npy_longlong __pyx_t_5numpy_longlong_t;
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":771
  * ctypedef npy_longlong   longlong_t
- * 
+ *
  * ctypedef npy_ulong      uint_t             # <<<<<<<<<<<<<<
  * ctypedef npy_ulonglong  ulong_t
  * ctypedef npy_ulonglong  ulonglong_t
@@ -931,11 +931,11 @@ typedef npy_longlong __pyx_t_5numpy_longlong_t;
 typedef npy_ulong __pyx_t_5numpy_uint_t;
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":772
- * 
+ *
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t             # <<<<<<<<<<<<<<
  * ctypedef npy_ulonglong  ulonglong_t
- * 
+ *
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
 
@@ -943,32 +943,32 @@ typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t
  * ctypedef npy_ulonglong  ulonglong_t             # <<<<<<<<<<<<<<
- * 
+ *
  * ctypedef npy_intp       intp_t
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":775
  * ctypedef npy_ulonglong  ulonglong_t
- * 
+ *
  * ctypedef npy_intp       intp_t             # <<<<<<<<<<<<<<
  * ctypedef npy_uintp      uintp_t
- * 
+ *
  */
 typedef npy_intp __pyx_t_5numpy_intp_t;
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":776
- * 
+ *
  * ctypedef npy_intp       intp_t
  * ctypedef npy_uintp      uintp_t             # <<<<<<<<<<<<<<
- * 
+ *
  * ctypedef npy_double     float_t
  */
 typedef npy_uintp __pyx_t_5numpy_uintp_t;
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":778
  * ctypedef npy_uintp      uintp_t
- * 
+ *
  * ctypedef npy_double     float_t             # <<<<<<<<<<<<<<
  * ctypedef npy_double     double_t
  * ctypedef npy_longdouble longdouble_t
@@ -976,11 +976,11 @@ typedef npy_uintp __pyx_t_5numpy_uintp_t;
 typedef npy_double __pyx_t_5numpy_float_t;
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":779
- * 
+ *
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t             # <<<<<<<<<<<<<<
  * ctypedef npy_longdouble longdouble_t
- * 
+ *
  */
 typedef npy_double __pyx_t_5numpy_double_t;
 
@@ -988,7 +988,7 @@ typedef npy_double __pyx_t_5numpy_double_t;
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t
  * ctypedef npy_longdouble longdouble_t             # <<<<<<<<<<<<<<
- * 
+ *
  * ctypedef npy_cfloat      cfloat_t
  */
 typedef npy_longdouble __pyx_t_5numpy_longdouble_t;
@@ -1022,7 +1022,7 @@ struct __pyx_obj_8pykdtree_6kdtree_KDTree;
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":782
  * ctypedef npy_longdouble longdouble_t
- * 
+ *
  * ctypedef npy_cfloat      cfloat_t             # <<<<<<<<<<<<<<
  * ctypedef npy_cdouble     cdouble_t
  * ctypedef npy_clongdouble clongdouble_t
@@ -1030,11 +1030,11 @@ struct __pyx_obj_8pykdtree_6kdtree_KDTree;
 typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":783
- * 
+ *
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t             # <<<<<<<<<<<<<<
  * ctypedef npy_clongdouble clongdouble_t
- * 
+ *
  */
 typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
 
@@ -1042,16 +1042,16 @@ typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t
  * ctypedef npy_clongdouble clongdouble_t             # <<<<<<<<<<<<<<
- * 
+ *
  * ctypedef npy_cdouble     complex_t
  */
 typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":786
  * ctypedef npy_clongdouble clongdouble_t
- * 
+ *
  * ctypedef npy_cdouble     complex_t             # <<<<<<<<<<<<<<
- * 
+ *
  * cdef inline object PyArray_MultiIterNew1(a):
  */
 typedef npy_cdouble __pyx_t_5numpy_complex_t;
@@ -1061,7 +1061,7 @@ struct __pyx_t_8pykdtree_6kdtree_node_double;
 struct __pyx_t_8pykdtree_6kdtree_tree_double;
 
 /* "pykdtree/kdtree.pyx":25
- * 
+ *
  * # Node structure
  * cdef struct node_float:             # <<<<<<<<<<<<<<
  *     float cut_val
@@ -1080,7 +1080,7 @@ struct __pyx_t_8pykdtree_6kdtree_node_float {
 
 /* "pykdtree/kdtree.pyx":35
  *     node_float *right_child
- * 
+ *
  * cdef struct tree_float:             # <<<<<<<<<<<<<<
  *     float *bbox
  *     int8_t no_dims
@@ -1094,7 +1094,7 @@ struct __pyx_t_8pykdtree_6kdtree_tree_float {
 
 /* "pykdtree/kdtree.pyx":41
  *     node_float *root
- * 
+ *
  * cdef struct node_double:             # <<<<<<<<<<<<<<
  *     double cut_val
  *     int8_t cut_dim
@@ -1112,7 +1112,7 @@ struct __pyx_t_8pykdtree_6kdtree_node_double {
 
 /* "pykdtree/kdtree.pyx":51
  *     node_double *right_child
- * 
+ *
  * cdef struct tree_double:             # <<<<<<<<<<<<<<
  *     double *bbox
  *     int8_t no_dims
@@ -1126,7 +1126,7 @@ struct __pyx_t_8pykdtree_6kdtree_tree_double {
 
 /* "pykdtree/kdtree.pyx":65
  * cdef extern void delete_tree_double(tree_double *kdtree)
- * 
+ *
  * cdef class KDTree:             # <<<<<<<<<<<<<<
  *     """kd-tree for fast nearest-neighbour lookup.
  *     The interface is made to resemble the scipy.spatial kd-tree except
@@ -1830,7 +1830,7 @@ static PyObject *__pyx_tuple__18;
 
 /* "pykdtree/kdtree.pyx":87
  *     cdef readonly uint32_t leafsize
- * 
+ *
  *     def __cinit__(KDTree self):             # <<<<<<<<<<<<<<
  *         self._kdtree_float = NULL
  *         self._kdtree_double = NULL
@@ -1858,11 +1858,11 @@ static int __pyx_pf_8pykdtree_6kdtree_6KDTree___cinit__(struct __pyx_obj_8pykdtr
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
   /* "pykdtree/kdtree.pyx":88
- * 
+ *
  *     def __cinit__(KDTree self):
  *         self._kdtree_float = NULL             # <<<<<<<<<<<<<<
  *         self._kdtree_double = NULL
- * 
+ *
  */
   __pyx_v_self->_kdtree_float = NULL;
 
@@ -1870,14 +1870,14 @@ static int __pyx_pf_8pykdtree_6kdtree_6KDTree___cinit__(struct __pyx_obj_8pykdtr
  *     def __cinit__(KDTree self):
  *         self._kdtree_float = NULL
  *         self._kdtree_double = NULL             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __init__(KDTree self, np.ndarray data_pts not None, int leafsize=16):
  */
   __pyx_v_self->_kdtree_double = NULL;
 
   /* "pykdtree/kdtree.pyx":87
  *     cdef readonly uint32_t leafsize
- * 
+ *
  *     def __cinit__(KDTree self):             # <<<<<<<<<<<<<<
  *         self._kdtree_float = NULL
  *         self._kdtree_double = NULL
@@ -1891,9 +1891,9 @@ static int __pyx_pf_8pykdtree_6kdtree_6KDTree___cinit__(struct __pyx_obj_8pykdtr
 
 /* "pykdtree/kdtree.pyx":91
  *         self._kdtree_double = NULL
- * 
+ *
  *     def __init__(KDTree self, np.ndarray data_pts not None, int leafsize=16):             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Check arguments
  */
 
@@ -2002,11 +2002,11 @@ static int __pyx_pf_8pykdtree_6kdtree_6KDTree_2__init__(struct __pyx_obj_8pykdtr
   __pyx_pybuffernd_data_array_double.rcbuffer = &__pyx_pybuffer_data_array_double;
 
   /* "pykdtree/kdtree.pyx":94
- * 
+ *
  *         # Check arguments
  *         if leafsize < 1:             # <<<<<<<<<<<<<<
  *             raise ValueError('leafsize must be greater than zero')
- * 
+ *
  */
   __pyx_t_1 = ((__pyx_v_leafsize < 1) != 0);
   if (__pyx_t_1) {
@@ -2015,7 +2015,7 @@ static int __pyx_pf_8pykdtree_6kdtree_6KDTree_2__init__(struct __pyx_obj_8pykdtr
  *         # Check arguments
  *         if leafsize < 1:
  *             raise ValueError('leafsize must be greater than zero')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Get data content
  */
     __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple_, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 95, __pyx_L1_error)
@@ -2025,17 +2025,17 @@ static int __pyx_pf_8pykdtree_6kdtree_6KDTree_2__init__(struct __pyx_obj_8pykdtr
     __PYX_ERR(0, 95, __pyx_L1_error)
 
     /* "pykdtree/kdtree.pyx":94
- * 
+ *
  *         # Check arguments
  *         if leafsize < 1:             # <<<<<<<<<<<<<<
  *             raise ValueError('leafsize must be greater than zero')
- * 
+ *
  */
   }
 
   /* "pykdtree/kdtree.pyx":101
  *         cdef np.ndarray[double, ndim=1] data_array_double
- * 
+ *
  *         if data_pts.dtype == np.float32:             # <<<<<<<<<<<<<<
  *             data_array_float = np.ascontiguousarray(data_pts.ravel(), dtype=np.float32)
  *             self._data_pts_data_float = <float *>data_array_float.data
@@ -2055,7 +2055,7 @@ static int __pyx_pf_8pykdtree_6kdtree_6KDTree_2__init__(struct __pyx_obj_8pykdtr
   if (__pyx_t_1) {
 
     /* "pykdtree/kdtree.pyx":102
- * 
+ *
  *         if data_pts.dtype == np.float32:
  *             data_array_float = np.ascontiguousarray(data_pts.ravel(), dtype=np.float32)             # <<<<<<<<<<<<<<
  *             self._data_pts_data_float = <float *>data_array_float.data
@@ -2152,7 +2152,7 @@ static int __pyx_pf_8pykdtree_6kdtree_6KDTree_2__init__(struct __pyx_obj_8pykdtr
 
     /* "pykdtree/kdtree.pyx":101
  *         cdef np.ndarray[double, ndim=1] data_array_double
- * 
+ *
  *         if data_pts.dtype == np.float32:             # <<<<<<<<<<<<<<
  *             data_array_float = np.ascontiguousarray(data_pts.ravel(), dtype=np.float32)
  *             self._data_pts_data_float = <float *>data_array_float.data
@@ -2240,7 +2240,7 @@ static int __pyx_pf_8pykdtree_6kdtree_6KDTree_2__init__(struct __pyx_obj_8pykdtr
  *             data_array_double = np.ascontiguousarray(data_pts.ravel(), dtype=np.float64)
  *             self._data_pts_data_double = <double *>data_array_double.data             # <<<<<<<<<<<<<<
  *             self.data_pts = data_array_double
- * 
+ *
  */
     __pyx_v_self->_data_pts_data_double = ((double *)__pyx_v_data_array_double->data);
 
@@ -2248,7 +2248,7 @@ static int __pyx_pf_8pykdtree_6kdtree_6KDTree_2__init__(struct __pyx_obj_8pykdtr
  *             data_array_double = np.ascontiguousarray(data_pts.ravel(), dtype=np.float64)
  *             self._data_pts_data_double = <double *>data_array_double.data
  *             self.data_pts = data_array_double             # <<<<<<<<<<<<<<
- * 
+ *
  *         # scipy interface compatibility
  */
     __Pyx_INCREF(((PyObject *)__pyx_v_data_array_double));
@@ -2260,10 +2260,10 @@ static int __pyx_pf_8pykdtree_6kdtree_6KDTree_2__init__(struct __pyx_obj_8pykdtr
   __pyx_L4:;
 
   /* "pykdtree/kdtree.pyx":111
- * 
+ *
  *         # scipy interface compatibility
  *         self.data = self.data_pts             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Get tree info
  */
   __pyx_t_5 = ((PyObject *)__pyx_v_self->data_pts);
@@ -2275,7 +2275,7 @@ static int __pyx_pf_8pykdtree_6kdtree_6KDTree_2__init__(struct __pyx_obj_8pykdtr
   __pyx_t_5 = 0;
 
   /* "pykdtree/kdtree.pyx":114
- * 
+ *
  *         # Get tree info
  *         self.n = <uint32_t>data_pts.shape[0]             # <<<<<<<<<<<<<<
  *         self.leafsize = <uint32_t>leafsize
@@ -2325,7 +2325,7 @@ static int __pyx_pf_8pykdtree_6kdtree_6KDTree_2__init__(struct __pyx_obj_8pykdtr
  *             self.ndim = 1
  *         else:
  *             self.ndim = <int8_t>data_pts.shape[1]             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Release GIL and construct tree
  */
   /*else*/ {
@@ -2334,7 +2334,7 @@ static int __pyx_pf_8pykdtree_6kdtree_6KDTree_2__init__(struct __pyx_obj_8pykdtr
   __pyx_L5:;
 
   /* "pykdtree/kdtree.pyx":122
- * 
+ *
  *         # Release GIL and construct tree
  *         if data_pts.dtype == np.float32:             # <<<<<<<<<<<<<<
  *             with nogil:
@@ -2399,7 +2399,7 @@ static int __pyx_pf_8pykdtree_6kdtree_6KDTree_2__init__(struct __pyx_obj_8pykdtr
     }
 
     /* "pykdtree/kdtree.pyx":122
- * 
+ *
  *         # Release GIL and construct tree
  *         if data_pts.dtype == np.float32:             # <<<<<<<<<<<<<<
  *             with nogil:
@@ -2429,7 +2429,7 @@ static int __pyx_pf_8pykdtree_6kdtree_6KDTree_2__init__(struct __pyx_obj_8pykdtr
  *             with nogil:
  *                 self._kdtree_double = construct_tree_double(self._data_pts_data_double, self.ndim,             # <<<<<<<<<<<<<<
  *                                                             self.n, self.leafsize)
- * 
+ *
  */
           __pyx_v_self->_kdtree_double = construct_tree_double(__pyx_v_self->_data_pts_data_double, __pyx_v_self->ndim, __pyx_v_self->n, __pyx_v_self->leafsize);
         }
@@ -2457,9 +2457,9 @@ static int __pyx_pf_8pykdtree_6kdtree_6KDTree_2__init__(struct __pyx_obj_8pykdtr
 
   /* "pykdtree/kdtree.pyx":91
  *         self._kdtree_double = NULL
- * 
+ *
  *     def __init__(KDTree self, np.ndarray data_pts not None, int leafsize=16):             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Check arguments
  */
 
@@ -2493,8 +2493,8 @@ static int __pyx_pf_8pykdtree_6kdtree_6KDTree_2__init__(struct __pyx_obj_8pykdtr
 }
 
 /* "pykdtree/kdtree.pyx":132
- * 
- * 
+ *
+ *
  *     def query(KDTree self, np.ndarray query_pts not None, k=1, eps=0,             # <<<<<<<<<<<<<<
  *               distance_upper_bound=None, sqr_dists=False, mask=None):
  *         """Query the kd-tree for nearest neighbors
@@ -2520,11 +2520,11 @@ static PyObject *__pyx_pw_8pykdtree_6kdtree_6KDTree_5query(PyObject *__pyx_v_sel
     values[2] = ((PyObject *)__pyx_int_0);
 
     /* "pykdtree/kdtree.pyx":133
- * 
+ *
  *     def query(KDTree self, np.ndarray query_pts not None, k=1, eps=0,
  *               distance_upper_bound=None, sqr_dists=False, mask=None):             # <<<<<<<<<<<<<<
  *         """Query the kd-tree for nearest neighbors
- * 
+ *
  */
     values[3] = ((PyObject *)Py_None);
     values[4] = ((PyObject *)Py_False);
@@ -2623,8 +2623,8 @@ static PyObject *__pyx_pw_8pykdtree_6kdtree_6KDTree_5query(PyObject *__pyx_v_sel
   __pyx_r = __pyx_pf_8pykdtree_6kdtree_6KDTree_4query(((struct __pyx_obj_8pykdtree_6kdtree_KDTree *)__pyx_v_self), __pyx_v_query_pts, __pyx_v_k, __pyx_v_eps, __pyx_v_distance_upper_bound, __pyx_v_sqr_dists, __pyx_v_mask);
 
   /* "pykdtree/kdtree.pyx":132
- * 
- * 
+ *
+ *
  *     def query(KDTree self, np.ndarray query_pts not None, k=1, eps=0,             # <<<<<<<<<<<<<<
  *               distance_upper_bound=None, sqr_dists=False, mask=None):
  *         """Query the kd-tree for nearest neighbors
@@ -2725,7 +2725,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
   __pyx_pybuffernd_query_mask.rcbuffer = &__pyx_pybuffer_query_mask;
 
   /* "pykdtree/kdtree.pyx":160
- * 
+ *
  *         # Check arguments
  *         if k < 1:             # <<<<<<<<<<<<<<
  *             raise ValueError('Number of neighbours must be greater than zero')
@@ -2750,7 +2750,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
     __PYX_ERR(0, 161, __pyx_L1_error)
 
     /* "pykdtree/kdtree.pyx":160
- * 
+ *
  *         # Check arguments
  *         if k < 1:             # <<<<<<<<<<<<<<
  *             raise ValueError('Number of neighbours must be greater than zero')
@@ -2808,7 +2808,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
  *         elif distance_upper_bound is not None:
  *             if distance_upper_bound < 0:             # <<<<<<<<<<<<<<
  *                 raise ValueError('distance_upper_bound must be non negative')
- * 
+ *
  */
     __pyx_t_1 = PyObject_RichCompare(__pyx_v_distance_upper_bound, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 165, __pyx_L1_error)
     __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 165, __pyx_L1_error)
@@ -2819,7 +2819,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
  *         elif distance_upper_bound is not None:
  *             if distance_upper_bound < 0:
  *                 raise ValueError('distance_upper_bound must be non negative')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Check dimensions
  */
       __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 166, __pyx_L1_error)
@@ -2833,7 +2833,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
  *         elif distance_upper_bound is not None:
  *             if distance_upper_bound < 0:             # <<<<<<<<<<<<<<
  *                 raise ValueError('distance_upper_bound must be non negative')
- * 
+ *
  */
     }
 
@@ -2847,7 +2847,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
   }
 
   /* "pykdtree/kdtree.pyx":169
- * 
+ *
  *         # Check dimensions
  *         if query_pts.ndim == 1:             # <<<<<<<<<<<<<<
  *             q_ndim = 1
@@ -2866,7 +2866,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
     __pyx_v_q_ndim = 1;
 
     /* "pykdtree/kdtree.pyx":169
- * 
+ *
  *         # Check dimensions
  *         if query_pts.ndim == 1:             # <<<<<<<<<<<<<<
  *             q_ndim = 1
@@ -2879,7 +2879,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
  *             q_ndim = 1
  *         else:
  *             q_ndim = query_pts.shape[1]             # <<<<<<<<<<<<<<
- * 
+ *
  *         if self.ndim != q_ndim:
  */
   /*else*/ {
@@ -2889,19 +2889,19 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
 
   /* "pykdtree/kdtree.pyx":174
  *             q_ndim = query_pts.shape[1]
- * 
+ *
  *         if self.ndim != q_ndim:             # <<<<<<<<<<<<<<
  *             raise ValueError('Data and query points must have same dimensions')
- * 
+ *
  */
   __pyx_t_3 = ((__pyx_v_self->ndim != __pyx_v_q_ndim) != 0);
   if (__pyx_t_3) {
 
     /* "pykdtree/kdtree.pyx":175
- * 
+ *
  *         if self.ndim != q_ndim:
  *             raise ValueError('Data and query points must have same dimensions')             # <<<<<<<<<<<<<<
- * 
+ *
  *         if self.data_pts.dtype == np.float32 and query_pts.dtype != np.float32:
  */
     __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 175, __pyx_L1_error)
@@ -2912,19 +2912,19 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
 
     /* "pykdtree/kdtree.pyx":174
  *             q_ndim = query_pts.shape[1]
- * 
+ *
  *         if self.ndim != q_ndim:             # <<<<<<<<<<<<<<
  *             raise ValueError('Data and query points must have same dimensions')
- * 
+ *
  */
   }
 
   /* "pykdtree/kdtree.pyx":177
  *             raise ValueError('Data and query points must have same dimensions')
- * 
+ *
  *         if self.data_pts.dtype == np.float32 and query_pts.dtype != np.float32:             # <<<<<<<<<<<<<<
  *             raise TypeError('Type mismatch. query points must be of type float32 when data points are of type float32')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self->data_pts), __pyx_n_s_dtype); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 177, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2960,10 +2960,10 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
   if (__pyx_t_3) {
 
     /* "pykdtree/kdtree.pyx":178
- * 
+ *
  *         if self.data_pts.dtype == np.float32 and query_pts.dtype != np.float32:
  *             raise TypeError('Type mismatch. query points must be of type float32 when data points are of type float32')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Get query info
  */
     __pyx_t_5 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 178, __pyx_L1_error)
@@ -2974,15 +2974,15 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
 
     /* "pykdtree/kdtree.pyx":177
  *             raise ValueError('Data and query points must have same dimensions')
- * 
+ *
  *         if self.data_pts.dtype == np.float32 and query_pts.dtype != np.float32:             # <<<<<<<<<<<<<<
  *             raise TypeError('Type mismatch. query points must be of type float32 when data points are of type float32')
- * 
+ *
  */
   }
 
   /* "pykdtree/kdtree.pyx":181
- * 
+ *
  *         # Get query info
  *         cdef uint32_t num_qpoints = query_pts.shape[0]             # <<<<<<<<<<<<<<
  *         cdef uint32_t num_n = k
@@ -3051,7 +3051,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
   __pyx_t_8 = 0;
 
   /* "pykdtree/kdtree.pyx":189
- * 
+ *
  *         # Set up return arrays
  *         cdef uint32_t *closest_idxs_data = <uint32_t *>closest_idxs.data             # <<<<<<<<<<<<<<
  *         cdef float *closest_dists_data_float
@@ -3061,7 +3061,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
 
   /* "pykdtree/kdtree.pyx":201
  *         cdef np.uint8_t *query_mask_data
- * 
+ *
  *         if mask is not None and mask.size != self.n:             # <<<<<<<<<<<<<<
  *             raise ValueError('Mask must have the same size as data points')
  *         elif mask is not None:
@@ -3087,7 +3087,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
   if (__pyx_t_3) {
 
     /* "pykdtree/kdtree.pyx":202
- * 
+ *
  *         if mask is not None and mask.size != self.n:
  *             raise ValueError('Mask must have the same size as data points')             # <<<<<<<<<<<<<<
  *         elif mask is not None:
@@ -3101,7 +3101,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
 
     /* "pykdtree/kdtree.pyx":201
  *         cdef np.uint8_t *query_mask_data
- * 
+ *
  *         if mask is not None and mask.size != self.n:             # <<<<<<<<<<<<<<
  *             raise ValueError('Mask must have the same size as data points')
  *         elif mask is not None:
@@ -3216,8 +3216,8 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
  *             query_mask_data = <uint8_t *>query_mask.data
  *         else:
  *             query_mask_data = NULL             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   /*else*/ {
     __pyx_v_query_mask_data = NULL;
@@ -3225,8 +3225,8 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
   __pyx_L10:;
 
   /* "pykdtree/kdtree.pyx":210
- * 
- * 
+ *
+ *
  *         if query_pts.dtype == np.float32 and self.data_pts.dtype == np.float32:             # <<<<<<<<<<<<<<
  *             closest_dists_float = np.empty(num_qpoints * k, dtype=np.float32)
  *             closest_dists = closest_dists_float
@@ -3265,7 +3265,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
   if (__pyx_t_10) {
 
     /* "pykdtree/kdtree.pyx":211
- * 
+ *
  *         if query_pts.dtype == np.float32 and self.data_pts.dtype == np.float32:
  *             closest_dists_float = np.empty(num_qpoints * k, dtype=np.float32)             # <<<<<<<<<<<<<<
  *             closest_dists = closest_dists_float
@@ -3426,8 +3426,8 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
     __pyx_v_query_array_data_float = ((float *)__pyx_v_query_array_float->data);
 
     /* "pykdtree/kdtree.pyx":210
- * 
- * 
+ *
+ *
  *         if query_pts.dtype == np.float32 and self.data_pts.dtype == np.float32:             # <<<<<<<<<<<<<<
  *             closest_dists_float = np.empty(num_qpoints * k, dtype=np.float32)
  *             closest_dists = closest_dists_float
@@ -3519,7 +3519,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
  *             closest_dists_data_double = <double *>closest_dists_double.data
  *             query_array_double = np.ascontiguousarray(query_pts.ravel(), dtype=np.float64)             # <<<<<<<<<<<<<<
  *             query_array_data_double = <double *>query_array_double.data
- * 
+ *
  */
     __pyx_t_7 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 220, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
@@ -3592,7 +3592,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
  *             closest_dists_data_double = <double *>closest_dists_double.data
  *             query_array_double = np.ascontiguousarray(query_pts.ravel(), dtype=np.float64)
  *             query_array_data_double = <double *>query_array_double.data             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Setup distance_upper_bound
  */
     __pyx_v_query_array_data_double = ((double *)__pyx_v_query_array_double->data);
@@ -3843,7 +3843,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
  *                 dub_float = <float>(distance_upper_bound * distance_upper_bound)
  *             else:
  *                 dub_double = <double>(distance_upper_bound * distance_upper_bound)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Set epsilon
  */
     /*else*/ {
@@ -3858,11 +3858,11 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
   __pyx_L16:;
 
   /* "pykdtree/kdtree.pyx":238
- * 
+ *
  *         # Set epsilon
  *         cdef double epsilon_float = <float>eps             # <<<<<<<<<<<<<<
  *         cdef double epsilon_double = <double>eps
- * 
+ *
  */
   __pyx_t_20 = __pyx_PyFloat_AsFloat(__pyx_v_eps); if (unlikely((__pyx_t_20 == (float)-1) && PyErr_Occurred())) __PYX_ERR(0, 238, __pyx_L1_error)
   __pyx_v_epsilon_float = ((float)__pyx_t_20);
@@ -3871,14 +3871,14 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
  *         # Set epsilon
  *         cdef double epsilon_float = <float>eps
  *         cdef double epsilon_double = <double>eps             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Release GIL and query tree
  */
   __pyx_t_21 = __pyx_PyFloat_AsDouble(__pyx_v_eps); if (unlikely((__pyx_t_21 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 239, __pyx_L1_error)
   __pyx_v_epsilon_double = ((double)__pyx_t_21);
 
   /* "pykdtree/kdtree.pyx":242
- * 
+ *
  *         # Release GIL and query tree
  *         if self.data_pts.dtype == np.float32:             # <<<<<<<<<<<<<<
  *             with nogil:
@@ -3943,7 +3943,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
     }
 
     /* "pykdtree/kdtree.pyx":242
- * 
+ *
  *         # Release GIL and query tree
  *         if self.data_pts.dtype == np.float32:             # <<<<<<<<<<<<<<
  *             with nogil:
@@ -3953,7 +3953,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
   }
 
   /* "pykdtree/kdtree.pyx":249
- * 
+ *
  *         else:
  *             with nogil:             # <<<<<<<<<<<<<<
  *                 search_tree_double(self._kdtree_double, self._data_pts_data_double,
@@ -3979,7 +3979,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
         }
 
         /* "pykdtree/kdtree.pyx":249
- * 
+ *
  *         else:
  *             with nogil:             # <<<<<<<<<<<<<<
  *                 search_tree_double(self._kdtree_double, self._data_pts_data_double,
@@ -4000,7 +4000,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
   __pyx_L19:;
 
   /* "pykdtree/kdtree.pyx":255
- * 
+ *
  *         # Shape result
  *         if k > 1:             # <<<<<<<<<<<<<<
  *             closest_dists_res = closest_dists.reshape(num_qpoints, k)
@@ -4134,7 +4134,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
     __pyx_t_4 = 0;
 
     /* "pykdtree/kdtree.pyx":255
- * 
+ *
  *         # Shape result
  *         if k > 1:             # <<<<<<<<<<<<<<
  *             closest_dists_res = closest_dists.reshape(num_qpoints, k)
@@ -4148,7 +4148,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
  *         else:
  *             closest_dists_res = closest_dists             # <<<<<<<<<<<<<<
  *             closest_idxs_res = closest_idxs
- * 
+ *
  */
   /*else*/ {
     __Pyx_INCREF(__pyx_v_closest_dists);
@@ -4158,7 +4158,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
  *         else:
  *             closest_dists_res = closest_dists
  *             closest_idxs_res = closest_idxs             # <<<<<<<<<<<<<<
- * 
+ *
  *         if distance_upper_bound is not None: # Mark out of bounds results
  */
     __Pyx_INCREF(((PyObject *)__pyx_v_closest_idxs));
@@ -4168,7 +4168,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
 
   /* "pykdtree/kdtree.pyx":262
  *             closest_idxs_res = closest_idxs
- * 
+ *
  *         if distance_upper_bound is not None: # Mark out of bounds results             # <<<<<<<<<<<<<<
  *             if self.data_pts.dtype == np.float32:
  *                 idx_out = (closest_dists_res >= dub_float)
@@ -4178,7 +4178,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
   if (__pyx_t_10) {
 
     /* "pykdtree/kdtree.pyx":263
- * 
+ *
  *         if distance_upper_bound is not None: # Mark out of bounds results
  *             if self.data_pts.dtype == np.float32:             # <<<<<<<<<<<<<<
  *                 idx_out = (closest_dists_res >= dub_float)
@@ -4213,7 +4213,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
       __pyx_t_8 = 0;
 
       /* "pykdtree/kdtree.pyx":263
- * 
+ *
  *         if distance_upper_bound is not None: # Mark out of bounds results
  *             if self.data_pts.dtype == np.float32:             # <<<<<<<<<<<<<<
  *                 idx_out = (closest_dists_res >= dub_float)
@@ -4226,7 +4226,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
  *                 idx_out = (closest_dists_res >= dub_float)
  *             else:
  *                 idx_out = (closest_dists_res >= dub_double)             # <<<<<<<<<<<<<<
- * 
+ *
  *             closest_dists_res[idx_out] = np.Inf
  */
     /*else*/ {
@@ -4241,10 +4241,10 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
 
     /* "pykdtree/kdtree.pyx":268
  *                 idx_out = (closest_dists_res >= dub_double)
- * 
+ *
  *             closest_dists_res[idx_out] = np.Inf             # <<<<<<<<<<<<<<
  *             closest_idxs_res[idx_out] = self.n
- * 
+ *
  */
     __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 268, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -4255,10 +4255,10 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
     /* "pykdtree/kdtree.pyx":269
- * 
+ *
  *             closest_dists_res[idx_out] = np.Inf
  *             closest_idxs_res[idx_out] = self.n             # <<<<<<<<<<<<<<
- * 
+ *
  *         if not sqr_dists: # Return actual cartesian distances
  */
     __pyx_t_8 = __Pyx_PyInt_From_uint32_t(__pyx_v_self->n); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 269, __pyx_L1_error)
@@ -4268,7 +4268,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
 
     /* "pykdtree/kdtree.pyx":262
  *             closest_idxs_res = closest_idxs
- * 
+ *
  *         if distance_upper_bound is not None: # Mark out of bounds results             # <<<<<<<<<<<<<<
  *             if self.data_pts.dtype == np.float32:
  *                 idx_out = (closest_dists_res >= dub_float)
@@ -4277,20 +4277,20 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
 
   /* "pykdtree/kdtree.pyx":271
  *             closest_idxs_res[idx_out] = self.n
- * 
+ *
  *         if not sqr_dists: # Return actual cartesian distances             # <<<<<<<<<<<<<<
  *             closest_dists_res = np.sqrt(closest_dists_res)
- * 
+ *
  */
   __pyx_t_10 = __Pyx_PyObject_IsTrue(__pyx_v_sqr_dists); if (unlikely(__pyx_t_10 < 0)) __PYX_ERR(0, 271, __pyx_L1_error)
   __pyx_t_3 = ((!__pyx_t_10) != 0);
   if (__pyx_t_3) {
 
     /* "pykdtree/kdtree.pyx":272
- * 
+ *
  *         if not sqr_dists: # Return actual cartesian distances
  *             closest_dists_res = np.sqrt(closest_dists_res)             # <<<<<<<<<<<<<<
- * 
+ *
  *         return closest_dists_res, closest_idxs_res
  */
     __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 272, __pyx_L1_error)
@@ -4346,18 +4346,18 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
 
     /* "pykdtree/kdtree.pyx":271
  *             closest_idxs_res[idx_out] = self.n
- * 
+ *
  *         if not sqr_dists: # Return actual cartesian distances             # <<<<<<<<<<<<<<
  *             closest_dists_res = np.sqrt(closest_dists_res)
- * 
+ *
  */
   }
 
   /* "pykdtree/kdtree.pyx":274
  *             closest_dists_res = np.sqrt(closest_dists_res)
- * 
+ *
  *         return closest_dists_res, closest_idxs_res             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __dealloc__(KDTree self):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4374,8 +4374,8 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
   goto __pyx_L0;
 
   /* "pykdtree/kdtree.pyx":132
- * 
- * 
+ *
+ *
  *     def query(KDTree self, np.ndarray query_pts not None, k=1, eps=0,             # <<<<<<<<<<<<<<
  *               distance_upper_bound=None, sqr_dists=False, mask=None):
  *         """Query the kd-tree for nearest neighbors
@@ -4427,7 +4427,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4query(struct __pyx_obj_8pyk
 
 /* "pykdtree/kdtree.pyx":276
  *         return closest_dists_res, closest_idxs_res
- * 
+ *
  *     def __dealloc__(KDTree self):             # <<<<<<<<<<<<<<
  *         if self._kdtree_float != NULL:
  *             delete_tree_float(self._kdtree_float)
@@ -4450,7 +4450,7 @@ static void __pyx_pf_8pykdtree_6kdtree_6KDTree_6__dealloc__(struct __pyx_obj_8py
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
   /* "pykdtree/kdtree.pyx":277
- * 
+ *
  *     def __dealloc__(KDTree self):
  *         if self._kdtree_float != NULL:             # <<<<<<<<<<<<<<
  *             delete_tree_float(self._kdtree_float)
@@ -4469,7 +4469,7 @@ static void __pyx_pf_8pykdtree_6kdtree_6KDTree_6__dealloc__(struct __pyx_obj_8py
     delete_tree_float(__pyx_v_self->_kdtree_float);
 
     /* "pykdtree/kdtree.pyx":277
- * 
+ *
  *     def __dealloc__(KDTree self):
  *         if self._kdtree_float != NULL:             # <<<<<<<<<<<<<<
  *             delete_tree_float(self._kdtree_float)
@@ -4505,7 +4505,7 @@ static void __pyx_pf_8pykdtree_6kdtree_6KDTree_6__dealloc__(struct __pyx_obj_8py
 
   /* "pykdtree/kdtree.pyx":276
  *         return closest_dists_res, closest_idxs_res
- * 
+ *
  *     def __dealloc__(KDTree self):             # <<<<<<<<<<<<<<
  *         if self._kdtree_float != NULL:
  *             delete_tree_float(self._kdtree_float)
@@ -4638,7 +4638,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_1n___get__(struct __pyx_obj_
  *     cdef readonly uint32_t n
  *     cdef readonly int8_t ndim             # <<<<<<<<<<<<<<
  *     cdef readonly uint32_t leafsize
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4681,7 +4681,7 @@ static PyObject *__pyx_pf_8pykdtree_6kdtree_6KDTree_4ndim___get__(struct __pyx_o
  *     cdef readonly uint32_t n
  *     cdef readonly int8_t ndim
  *     cdef readonly uint32_t leafsize             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __cinit__(KDTree self):
  */
 
@@ -4877,9 +4877,9 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":220
  *             # of flags
- * 
+ *
  *             if info == NULL: return             # <<<<<<<<<<<<<<
- * 
+ *
  *             cdef int copy_shape, i, ndim
  */
   __pyx_t_1 = ((__pyx_v_info == NULL) != 0);
@@ -4889,11 +4889,11 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   }
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":223
- * 
+ *
  *             cdef int copy_shape, i, ndim
  *             cdef int endian_detector = 1             # <<<<<<<<<<<<<<
  *             cdef bint little_endian = ((<char*>&endian_detector)[0] != 0)
- * 
+ *
  */
   __pyx_v_endian_detector = 1;
 
@@ -4901,23 +4901,23 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  *             cdef int copy_shape, i, ndim
  *             cdef int endian_detector = 1
  *             cdef bint little_endian = ((<char*>&endian_detector)[0] != 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *             ndim = PyArray_NDIM(self)
  */
   __pyx_v_little_endian = ((((char *)(&__pyx_v_endian_detector))[0]) != 0);
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":226
  *             cdef bint little_endian = ((<char*>&endian_detector)[0] != 0)
- * 
+ *
  *             ndim = PyArray_NDIM(self)             # <<<<<<<<<<<<<<
- * 
+ *
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):
  */
   __pyx_v_ndim = PyArray_NDIM(__pyx_v_self);
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":228
  *             ndim = PyArray_NDIM(self)
- * 
+ *
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):             # <<<<<<<<<<<<<<
  *                 copy_shape = 1
  *             else:
@@ -4926,7 +4926,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   if (__pyx_t_1) {
 
     /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":229
- * 
+ *
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):
  *                 copy_shape = 1             # <<<<<<<<<<<<<<
  *             else:
@@ -4936,7 +4936,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
 
     /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":228
  *             ndim = PyArray_NDIM(self)
- * 
+ *
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):             # <<<<<<<<<<<<<<
  *                 copy_shape = 1
  *             else:
@@ -4948,7 +4948,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  *                 copy_shape = 1
  *             else:
  *                 copy_shape = 0             # <<<<<<<<<<<<<<
- * 
+ *
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)
  */
   /*else*/ {
@@ -4958,7 +4958,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":233
  *                 copy_shape = 0
- * 
+ *
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)             # <<<<<<<<<<<<<<
  *                 and not PyArray_CHKFLAGS(self, NPY_C_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not C contiguous")
@@ -4971,11 +4971,11 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   }
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":234
- * 
+ *
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_C_CONTIGUOUS)):             # <<<<<<<<<<<<<<
  *                 raise ValueError(u"ndarray is not C contiguous")
- * 
+ *
  */
   __pyx_t_2 = ((!(PyArray_CHKFLAGS(__pyx_v_self, NPY_C_CONTIGUOUS) != 0)) != 0);
   __pyx_t_1 = __pyx_t_2;
@@ -4983,7 +4983,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":233
  *                 copy_shape = 0
- * 
+ *
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)             # <<<<<<<<<<<<<<
  *                 and not PyArray_CHKFLAGS(self, NPY_C_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not C contiguous")
@@ -4994,7 +4994,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_C_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not C contiguous")             # <<<<<<<<<<<<<<
- * 
+ *
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)
  */
     __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__10, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 235, __pyx_L1_error)
@@ -5005,7 +5005,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
 
     /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":233
  *                 copy_shape = 0
- * 
+ *
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)             # <<<<<<<<<<<<<<
  *                 and not PyArray_CHKFLAGS(self, NPY_C_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not C contiguous")
@@ -5014,7 +5014,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":237
  *                 raise ValueError(u"ndarray is not C contiguous")
- * 
+ *
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)             # <<<<<<<<<<<<<<
  *                 and not PyArray_CHKFLAGS(self, NPY_F_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not Fortran contiguous")
@@ -5027,11 +5027,11 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   }
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":238
- * 
+ *
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_F_CONTIGUOUS)):             # <<<<<<<<<<<<<<
  *                 raise ValueError(u"ndarray is not Fortran contiguous")
- * 
+ *
  */
   __pyx_t_2 = ((!(PyArray_CHKFLAGS(__pyx_v_self, NPY_F_CONTIGUOUS) != 0)) != 0);
   __pyx_t_1 = __pyx_t_2;
@@ -5039,7 +5039,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":237
  *                 raise ValueError(u"ndarray is not C contiguous")
- * 
+ *
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)             # <<<<<<<<<<<<<<
  *                 and not PyArray_CHKFLAGS(self, NPY_F_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not Fortran contiguous")
@@ -5050,7 +5050,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_F_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not Fortran contiguous")             # <<<<<<<<<<<<<<
- * 
+ *
  *             info.buf = PyArray_DATA(self)
  */
     __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__11, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 239, __pyx_L1_error)
@@ -5061,7 +5061,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
 
     /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":237
  *                 raise ValueError(u"ndarray is not C contiguous")
- * 
+ *
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)             # <<<<<<<<<<<<<<
  *                 and not PyArray_CHKFLAGS(self, NPY_F_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not Fortran contiguous")
@@ -5070,7 +5070,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":241
  *                 raise ValueError(u"ndarray is not Fortran contiguous")
- * 
+ *
  *             info.buf = PyArray_DATA(self)             # <<<<<<<<<<<<<<
  *             info.ndim = ndim
  *             if copy_shape:
@@ -5078,7 +5078,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_v_info->buf = PyArray_DATA(__pyx_v_self);
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":242
- * 
+ *
  *             info.buf = PyArray_DATA(self)
  *             info.ndim = ndim             # <<<<<<<<<<<<<<
  *             if copy_shape:
@@ -5189,7 +5189,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  *             info.suboffsets = NULL
  *             info.itemsize = PyArray_ITEMSIZE(self)             # <<<<<<<<<<<<<<
  *             info.readonly = not PyArray_ISWRITEABLE(self)
- * 
+ *
  */
   __pyx_v_info->itemsize = PyArray_ITEMSIZE(__pyx_v_self);
 
@@ -5197,13 +5197,13 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  *             info.suboffsets = NULL
  *             info.itemsize = PyArray_ITEMSIZE(self)
  *             info.readonly = not PyArray_ISWRITEABLE(self)             # <<<<<<<<<<<<<<
- * 
+ *
  *             cdef int t
  */
   __pyx_v_info->readonly = (!(PyArray_ISWRITEABLE(__pyx_v_self) != 0));
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":259
- * 
+ *
  *             cdef int t
  *             cdef char* f = NULL             # <<<<<<<<<<<<<<
  *             cdef dtype descr = self.descr
@@ -5216,7 +5216,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  *             cdef char* f = NULL
  *             cdef dtype descr = self.descr             # <<<<<<<<<<<<<<
  *             cdef int offset
- * 
+ *
  */
   __pyx_t_3 = ((PyObject *)__pyx_v_self->descr);
   __Pyx_INCREF(__pyx_t_3);
@@ -5225,16 +5225,16 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":263
  *             cdef int offset
- * 
+ *
  *             cdef bint hasfields = PyDataType_HASFIELDS(descr)             # <<<<<<<<<<<<<<
- * 
+ *
  *             if not hasfields and not copy_shape:
  */
   __pyx_v_hasfields = PyDataType_HASFIELDS(__pyx_v_descr);
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":265
  *             cdef bint hasfields = PyDataType_HASFIELDS(descr)
- * 
+ *
  *             if not hasfields and not copy_shape:             # <<<<<<<<<<<<<<
  *                 # do not call releasebuffer
  *                 info.obj = None
@@ -5265,7 +5265,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
 
     /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":265
  *             cdef bint hasfields = PyDataType_HASFIELDS(descr)
- * 
+ *
  *             if not hasfields and not copy_shape:             # <<<<<<<<<<<<<<
  *                 # do not call releasebuffer
  *                 info.obj = None
@@ -5277,7 +5277,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  *             else:
  *                 # need to call releasebuffer
  *                 info.obj = self             # <<<<<<<<<<<<<<
- * 
+ *
  *             if not hasfields:
  */
   /*else*/ {
@@ -5291,7 +5291,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":272
  *                 info.obj = self
- * 
+ *
  *             if not hasfields:             # <<<<<<<<<<<<<<
  *                 t = descr.type_num
  *                 if ((descr.byteorder == c'>' and little_endian) or
@@ -5300,7 +5300,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   if (__pyx_t_1) {
 
     /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":273
- * 
+ *
  *             if not hasfields:
  *                 t = descr.type_num             # <<<<<<<<<<<<<<
  *                 if ((descr.byteorder == c'>' and little_endian) or
@@ -5613,7 +5613,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
 
     /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":272
  *                 info.obj = self
- * 
+ *
  *             if not hasfields:             # <<<<<<<<<<<<<<
  *                 t = descr.type_num
  *                 if ((descr.byteorder == c'>' and little_endian) or
@@ -5662,7 +5662,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  *                                       info.format + _buffer_format_string_len,
  *                                       &offset)
  *                 f[0] = c'\0' # Terminate format string             # <<<<<<<<<<<<<<
- * 
+ *
  *         def __releasebuffer__(ndarray self, Py_buffer* info):
  */
     (__pyx_v_f[0]) = '\x00';
@@ -5702,7 +5702,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":307
  *                 f[0] = c'\0' # Terminate format string
- * 
+ *
  *         def __releasebuffer__(ndarray self, Py_buffer* info):             # <<<<<<<<<<<<<<
  *             if PyArray_HASFIELDS(self):
  *                 PyObject_Free(info.format)
@@ -5725,7 +5725,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
   __Pyx_RefNannySetupContext("__releasebuffer__", 0);
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":308
- * 
+ *
  *         def __releasebuffer__(ndarray self, Py_buffer* info):
  *             if PyArray_HASFIELDS(self):             # <<<<<<<<<<<<<<
  *                 PyObject_Free(info.format)
@@ -5744,7 +5744,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
     PyObject_Free(__pyx_v_info->format);
 
     /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":308
- * 
+ *
  *         def __releasebuffer__(ndarray self, Py_buffer* info):
  *             if PyArray_HASFIELDS(self):             # <<<<<<<<<<<<<<
  *                 PyObject_Free(info.format)
@@ -5767,7 +5767,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):
  *                 PyObject_Free(info.strides)             # <<<<<<<<<<<<<<
  *                 # info.shape was stored after info.strides in the same block
- * 
+ *
  */
     PyObject_Free(__pyx_v_info->strides);
 
@@ -5782,7 +5782,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":307
  *                 f[0] = c'\0' # Terminate format string
- * 
+ *
  *         def __releasebuffer__(ndarray self, Py_buffer* info):             # <<<<<<<<<<<<<<
  *             if PyArray_HASFIELDS(self):
  *                 PyObject_Free(info.format)
@@ -5794,10 +5794,10 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":788
  * ctypedef npy_cdouble     complex_t
- * 
+ *
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
  *     return PyArray_MultiIterNew(1, <void*>a)
- * 
+ *
  */
 
 static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__pyx_v_a) {
@@ -5807,10 +5807,10 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew1", 0);
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":789
- * 
+ *
  * cdef inline object PyArray_MultiIterNew1(a):
  *     return PyArray_MultiIterNew(1, <void*>a)             # <<<<<<<<<<<<<<
- * 
+ *
  * cdef inline object PyArray_MultiIterNew2(a, b):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5822,10 +5822,10 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":788
  * ctypedef npy_cdouble     complex_t
- * 
+ *
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
  *     return PyArray_MultiIterNew(1, <void*>a)
- * 
+ *
  */
 
   /* function exit code */
@@ -5841,10 +5841,10 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":791
  *     return PyArray_MultiIterNew(1, <void*>a)
- * 
+ *
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
- * 
+ *
  */
 
 static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__pyx_v_a, PyObject *__pyx_v_b) {
@@ -5854,10 +5854,10 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew2", 0);
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":792
- * 
+ *
  * cdef inline object PyArray_MultiIterNew2(a, b):
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)             # <<<<<<<<<<<<<<
- * 
+ *
  * cdef inline object PyArray_MultiIterNew3(a, b, c):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5869,10 +5869,10 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":791
  *     return PyArray_MultiIterNew(1, <void*>a)
- * 
+ *
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
- * 
+ *
  */
 
   /* function exit code */
@@ -5888,10 +5888,10 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":794
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
- * 
+ *
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
- * 
+ *
  */
 
 static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__pyx_v_a, PyObject *__pyx_v_b, PyObject *__pyx_v_c) {
@@ -5901,10 +5901,10 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew3", 0);
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":795
- * 
+ *
  * cdef inline object PyArray_MultiIterNew3(a, b, c):
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)             # <<<<<<<<<<<<<<
- * 
+ *
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5916,10 +5916,10 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":794
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
- * 
+ *
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
- * 
+ *
  */
 
   /* function exit code */
@@ -5935,10 +5935,10 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":797
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
- * 
+ *
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
- * 
+ *
  */
 
 static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__pyx_v_a, PyObject *__pyx_v_b, PyObject *__pyx_v_c, PyObject *__pyx_v_d) {
@@ -5948,10 +5948,10 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew4", 0);
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":798
- * 
+ *
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)             # <<<<<<<<<<<<<<
- * 
+ *
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5963,10 +5963,10 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":797
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
- * 
+ *
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
- * 
+ *
  */
 
   /* function exit code */
@@ -5982,10 +5982,10 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":800
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
- * 
+ *
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
- * 
+ *
  */
 
 static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__pyx_v_a, PyObject *__pyx_v_b, PyObject *__pyx_v_c, PyObject *__pyx_v_d, PyObject *__pyx_v_e) {
@@ -5995,10 +5995,10 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew5", 0);
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":801
- * 
+ *
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)             # <<<<<<<<<<<<<<
- * 
+ *
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6010,10 +6010,10 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":800
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
- * 
+ *
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
- * 
+ *
  */
 
   /* function exit code */
@@ -6029,7 +6029,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":803
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
- * 
+ *
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
  *     if PyDataType_HASSUBARRAY(d):
  *         return <tuple>d.subarray.shape
@@ -6042,7 +6042,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   __Pyx_RefNannySetupContext("PyDataType_SHAPE", 0);
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":804
- * 
+ *
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
  *         return <tuple>d.subarray.shape
@@ -6064,7 +6064,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     goto __pyx_L0;
 
     /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":804
- * 
+ *
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
  *         return <tuple>d.subarray.shape
@@ -6076,7 +6076,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
  *         return <tuple>d.subarray.shape
  *     else:
  *         return ()             # <<<<<<<<<<<<<<
- * 
+ *
  * cdef inline char* _util_dtypestring(dtype descr, char* f, char* end, int* offset) except NULL:
  */
   /*else*/ {
@@ -6088,7 +6088,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":803
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
- * 
+ *
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
  *     if PyDataType_HASSUBARRAY(d):
  *         return <tuple>d.subarray.shape
@@ -6103,7 +6103,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":809
  *         return ()
- * 
+ *
  * cdef inline char* _util_dtypestring(dtype descr, char* f, char* end, int* offset) except NULL:             # <<<<<<<<<<<<<<
  *     # Recursive utility function used in __getbuffer__ to get format
  *     # string. The new location in the format string is returned.
@@ -6131,7 +6131,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
   __Pyx_RefNannySetupContext("_util_dtypestring", 0);
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":814
- * 
+ *
  *     cdef dtype child
  *     cdef int endian_detector = 1             # <<<<<<<<<<<<<<
  *     cdef bint little_endian = ((<char*>&endian_detector)[0] != 0)
@@ -6144,13 +6144,13 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  *     cdef int endian_detector = 1
  *     cdef bint little_endian = ((<char*>&endian_detector)[0] != 0)             # <<<<<<<<<<<<<<
  *     cdef tuple fields
- * 
+ *
  */
   __pyx_v_little_endian = ((((char *)(&__pyx_v_endian_detector))[0]) != 0);
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":818
  *     cdef tuple fields
- * 
+ *
  *     for childname in descr.names:             # <<<<<<<<<<<<<<
  *         fields = descr.fields[childname]
  *         child, new_offset = fields
@@ -6172,11 +6172,11 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __pyx_t_3 = 0;
 
     /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":819
- * 
+ *
  *     for childname in descr.names:
  *         fields = descr.fields[childname]             # <<<<<<<<<<<<<<
  *         child, new_offset = fields
- * 
+ *
  */
     if (unlikely(__pyx_v_descr->fields == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
@@ -6192,7 +6192,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  *     for childname in descr.names:
  *         fields = descr.fields[childname]
  *         child, new_offset = fields             # <<<<<<<<<<<<<<
- * 
+ *
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:
  */
     if (likely(__pyx_v_fields != Py_None)) {
@@ -6208,8 +6208,8 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         __PYX_ERR(2, 820, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
       __Pyx_INCREF(__pyx_t_3);
       __Pyx_INCREF(__pyx_t_4);
       #else
@@ -6229,10 +6229,10 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
 
     /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":822
  *         child, new_offset = fields
- * 
+ *
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:             # <<<<<<<<<<<<<<
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")
- * 
+ *
  */
     __pyx_t_4 = __Pyx_PyInt_From_int((__pyx_v_offset[0])); if (unlikely(!__pyx_t_4)) __PYX_ERR(2, 822, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -6245,10 +6245,10 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     if (__pyx_t_6) {
 
       /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":823
- * 
+ *
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")             # <<<<<<<<<<<<<<
- * 
+ *
  *         if ((child.byteorder == c'>' and little_endian) or
  */
       __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_RuntimeError, __pyx_tuple__13, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 823, __pyx_L1_error)
@@ -6259,16 +6259,16 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
 
       /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":822
  *         child, new_offset = fields
- * 
+ *
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:             # <<<<<<<<<<<<<<
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")
- * 
+ *
  */
     }
 
     /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":825
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")
- * 
+ *
  *         if ((child.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
  *             (child.byteorder == c'<' and not little_endian)):
  *             raise ValueError(u"Non-native byte order not supported")
@@ -6287,7 +6287,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __pyx_L8_next_or:;
 
     /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":826
- * 
+ *
  *         if ((child.byteorder == c'>' and little_endian) or
  *             (child.byteorder == c'<' and not little_endian)):             # <<<<<<<<<<<<<<
  *             raise ValueError(u"Non-native byte order not supported")
@@ -6305,7 +6305,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
 
     /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":825
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")
- * 
+ *
  *         if ((child.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
  *             (child.byteorder == c'<' and not little_endian)):
  *             raise ValueError(u"Non-native byte order not supported")
@@ -6327,7 +6327,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
 
       /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":825
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")
- * 
+ *
  *         if ((child.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
  *             (child.byteorder == c'<' and not little_endian)):
  *             raise ValueError(u"Non-native byte order not supported")
@@ -6335,7 +6335,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     }
 
     /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":837
- * 
+ *
  *         # Output padding bytes
  *         while offset[0] < new_offset:             # <<<<<<<<<<<<<<
  *             f[0] = 120 # "x"; pad byte
@@ -6364,7 +6364,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  *             f[0] = 120 # "x"; pad byte
  *             f += 1             # <<<<<<<<<<<<<<
  *             offset[0] += 1
- * 
+ *
  */
       __pyx_v_f = (__pyx_v_f + 1);
 
@@ -6372,7 +6372,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  *             f[0] = 120 # "x"; pad byte
  *             f += 1
  *             offset[0] += 1             # <<<<<<<<<<<<<<
- * 
+ *
  *         offset[0] += child.itemsize
  */
       __pyx_t_8 = 0;
@@ -6381,9 +6381,9 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
 
     /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":842
  *             offset[0] += 1
- * 
+ *
  *         offset[0] += child.itemsize             # <<<<<<<<<<<<<<
- * 
+ *
  *         if not PyDataType_HASFIELDS(child):
  */
     __pyx_t_8 = 0;
@@ -6391,7 +6391,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
 
     /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":844
  *         offset[0] += child.itemsize
- * 
+ *
  *         if not PyDataType_HASFIELDS(child):             # <<<<<<<<<<<<<<
  *             t = child.type_num
  *             if end - f < 5:
@@ -6400,7 +6400,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     if (__pyx_t_6) {
 
       /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":845
- * 
+ *
  *         if not PyDataType_HASFIELDS(child):
  *             t = child.type_num             # <<<<<<<<<<<<<<
  *             if end - f < 5:
@@ -6416,7 +6416,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  *             t = child.type_num
  *             if end - f < 5:             # <<<<<<<<<<<<<<
  *                 raise RuntimeError(u"Format string allocated too short.")
- * 
+ *
  */
       __pyx_t_6 = (((__pyx_v_end - __pyx_v_f) < 5) != 0);
       if (__pyx_t_6) {
@@ -6425,7 +6425,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  *             t = child.type_num
  *             if end - f < 5:
  *                 raise RuntimeError(u"Format string allocated too short.")             # <<<<<<<<<<<<<<
- * 
+ *
  *             # Until ticket #99 is fixed, use integers to avoid warnings
  */
         __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_RuntimeError, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(2, 847, __pyx_L1_error)
@@ -6439,12 +6439,12 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  *             t = child.type_num
  *             if end - f < 5:             # <<<<<<<<<<<<<<
  *                 raise RuntimeError(u"Format string allocated too short.")
- * 
+ *
  */
       }
 
       /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":850
- * 
+ *
  *             # Until ticket #99 is fixed, use integers to avoid warnings
  *             if   t == NPY_BYTE:        f[0] =  98 #"b"             # <<<<<<<<<<<<<<
  *             elif t == NPY_UBYTE:       f[0] =  66 #"B"
@@ -6790,7 +6790,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
 
       /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":844
  *         offset[0] += child.itemsize
- * 
+ *
  *         if not PyDataType_HASFIELDS(child):             # <<<<<<<<<<<<<<
  *             t = child.type_num
  *             if end - f < 5:
@@ -6803,7 +6803,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  *             # so don't output it
  *             f = _util_dtypestring(child, f, end, offset)             # <<<<<<<<<<<<<<
  *     return f
- * 
+ *
  */
     /*else*/ {
       __pyx_t_9 = __pyx_f_5numpy__util_dtypestring(__pyx_v_child, __pyx_v_f, __pyx_v_end, __pyx_v_offset); if (unlikely(__pyx_t_9 == ((char *)NULL))) __PYX_ERR(2, 873, __pyx_L1_error)
@@ -6813,7 +6813,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
 
     /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":818
  *     cdef tuple fields
- * 
+ *
  *     for childname in descr.names:             # <<<<<<<<<<<<<<
  *         fields = descr.fields[childname]
  *         child, new_offset = fields
@@ -6825,15 +6825,15 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  *             # so don't output it
  *             f = _util_dtypestring(child, f, end, offset)
  *     return f             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_r = __pyx_v_f;
   goto __pyx_L0;
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":809
  *         return ()
- * 
+ *
  * cdef inline char* _util_dtypestring(dtype descr, char* f, char* end, int* offset) except NULL:             # <<<<<<<<<<<<<<
  *     # Recursive utility function used in __getbuffer__ to get format
  *     # string. The new location in the format string is returned.
@@ -6857,8 +6857,8 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
 }
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":990
- * 
- * 
+ *
+ *
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
  *      cdef PyObject* baseptr
  *      if base is None:
@@ -6927,7 +6927,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  *          baseptr = <PyObject*>base
  *      Py_XDECREF(arr.base)             # <<<<<<<<<<<<<<
  *      arr.base = baseptr
- * 
+ *
  */
   Py_XDECREF(__pyx_v_arr->base);
 
@@ -6935,14 +6935,14 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  *          baseptr = <PyObject*>base
  *      Py_XDECREF(arr.base)
  *      arr.base = baseptr             # <<<<<<<<<<<<<<
- * 
+ *
  * cdef inline object get_array_base(ndarray arr):
  */
   __pyx_v_arr->base = __pyx_v_baseptr;
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":990
- * 
- * 
+ *
+ *
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
  *      cdef PyObject* baseptr
  *      if base is None:
@@ -6954,7 +6954,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1000
  *      arr.base = baseptr
- * 
+ *
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
  *     if arr.base is NULL:
  *         return None
@@ -6967,7 +6967,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __Pyx_RefNannySetupContext("get_array_base", 0);
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1001
- * 
+ *
  * cdef inline object get_array_base(ndarray arr):
  *     if arr.base is NULL:             # <<<<<<<<<<<<<<
  *         return None
@@ -6989,7 +6989,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
     goto __pyx_L0;
 
     /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1001
- * 
+ *
  * cdef inline object get_array_base(ndarray arr):
  *     if arr.base is NULL:             # <<<<<<<<<<<<<<
  *         return None
@@ -7001,8 +7001,8 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  *         return None
  *     else:
  *         return <object>arr.base             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   /*else*/ {
     __Pyx_XDECREF(__pyx_r);
@@ -7013,7 +7013,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1000
  *      arr.base = baseptr
- * 
+ *
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
  *     if arr.base is NULL:
  *         return None
@@ -7091,7 +7091,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
  *         _import_array()
  *     except Exception:             # <<<<<<<<<<<<<<
  *         raise ImportError("numpy.core.multiarray failed to import")
- * 
+ *
  */
     __pyx_t_4 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
     if (__pyx_t_4) {
@@ -7105,7 +7105,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
  *         _import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
- * 
+ *
  * cdef inline int import_umath() except -1:
  */
       __pyx_t_8 = __Pyx_PyObject_Call(__pyx_builtin_ImportError, __pyx_tuple__16, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(2, 1013, __pyx_L5_except_error)
@@ -7157,7 +7157,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1015
  *         raise ImportError("numpy.core.multiarray failed to import")
- * 
+ *
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
  *     try:
  *         _import_umath()
@@ -7177,7 +7177,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   __Pyx_RefNannySetupContext("import_umath", 0);
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1016
- * 
+ *
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
  *         _import_umath()
@@ -7202,7 +7202,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 1017, __pyx_L3_error)
 
       /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1016
- * 
+ *
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
  *         _import_umath()
@@ -7220,7 +7220,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
  *         raise ImportError("numpy.core.umath failed to import")
- * 
+ *
  */
     __pyx_t_4 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
     if (__pyx_t_4) {
@@ -7234,7 +7234,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
- * 
+ *
  * cdef inline int import_ufunc() except -1:
  */
       __pyx_t_8 = __Pyx_PyObject_Call(__pyx_builtin_ImportError, __pyx_tuple__17, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(2, 1019, __pyx_L5_except_error)
@@ -7247,7 +7247,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __pyx_L5_except_error:;
 
     /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1016
- * 
+ *
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
  *         _import_umath()
@@ -7263,7 +7263,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1015
  *         raise ImportError("numpy.core.multiarray failed to import")
- * 
+ *
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
  *     try:
  *         _import_umath()
@@ -7286,7 +7286,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
 
 /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1021
  *         raise ImportError("numpy.core.umath failed to import")
- * 
+ *
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
  *     try:
  *         _import_umath()
@@ -7306,7 +7306,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   __Pyx_RefNannySetupContext("import_ufunc", 0);
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1022
- * 
+ *
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
  *         _import_umath()
@@ -7331,7 +7331,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 1023, __pyx_L3_error)
 
       /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1022
- * 
+ *
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
  *         _import_umath()
@@ -7373,7 +7373,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __pyx_L5_except_error:;
 
     /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1022
- * 
+ *
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
  *         _import_umath()
@@ -7389,7 +7389,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1021
  *         raise ImportError("numpy.core.umath failed to import")
- * 
+ *
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
  *     try:
  *         _import_umath()
@@ -7682,7 +7682,7 @@ static int __Pyx_InitCachedConstants(void) {
  *         # Check arguments
  *         if leafsize < 1:
  *             raise ValueError('leafsize must be greater than zero')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Get data content
  */
   __pyx_tuple_ = PyTuple_Pack(1, __pyx_kp_s_leafsize_must_be_greater_than_ze); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 95, __pyx_L1_error)
@@ -7715,7 +7715,7 @@ static int __Pyx_InitCachedConstants(void) {
  *         elif distance_upper_bound is not None:
  *             if distance_upper_bound < 0:
  *                 raise ValueError('distance_upper_bound must be non negative')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Check dimensions
  */
   __pyx_tuple__4 = PyTuple_Pack(1, __pyx_kp_s_distance_upper_bound_must_be_non); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 166, __pyx_L1_error)
@@ -7723,10 +7723,10 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__4);
 
   /* "pykdtree/kdtree.pyx":175
- * 
+ *
  *         if self.ndim != q_ndim:
  *             raise ValueError('Data and query points must have same dimensions')             # <<<<<<<<<<<<<<
- * 
+ *
  *         if self.data_pts.dtype == np.float32 and query_pts.dtype != np.float32:
  */
   __pyx_tuple__5 = PyTuple_Pack(1, __pyx_kp_s_Data_and_query_points_must_have); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 175, __pyx_L1_error)
@@ -7734,10 +7734,10 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__5);
 
   /* "pykdtree/kdtree.pyx":178
- * 
+ *
  *         if self.data_pts.dtype == np.float32 and query_pts.dtype != np.float32:
  *             raise TypeError('Type mismatch. query points must be of type float32 when data points are of type float32')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Get query info
  */
   __pyx_tuple__6 = PyTuple_Pack(1, __pyx_kp_s_Type_mismatch_query_points_must); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 178, __pyx_L1_error)
@@ -7745,7 +7745,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__6);
 
   /* "pykdtree/kdtree.pyx":202
- * 
+ *
  *         if mask is not None and mask.size != self.n:
  *             raise ValueError('Mask must have the same size as data points')             # <<<<<<<<<<<<<<
  *         elif mask is not None:
@@ -7778,7 +7778,7 @@ static int __Pyx_InitCachedConstants(void) {
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_C_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not C contiguous")             # <<<<<<<<<<<<<<
- * 
+ *
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)
  */
   __pyx_tuple__10 = PyTuple_Pack(1, __pyx_kp_u_ndarray_is_not_C_contiguous); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(2, 235, __pyx_L1_error)
@@ -7789,7 +7789,7 @@ static int __Pyx_InitCachedConstants(void) {
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_F_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not Fortran contiguous")             # <<<<<<<<<<<<<<
- * 
+ *
  *             info.buf = PyArray_DATA(self)
  */
   __pyx_tuple__11 = PyTuple_Pack(1, __pyx_kp_u_ndarray_is_not_Fortran_contiguou); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(2, 239, __pyx_L1_error)
@@ -7808,10 +7808,10 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__12);
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":823
- * 
+ *
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")             # <<<<<<<<<<<<<<
- * 
+ *
  *         if ((child.byteorder == c'>' and little_endian) or
  */
   __pyx_tuple__13 = PyTuple_Pack(1, __pyx_kp_u_Format_string_allocated_too_shor); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(2, 823, __pyx_L1_error)
@@ -7833,7 +7833,7 @@ static int __Pyx_InitCachedConstants(void) {
  *             t = child.type_num
  *             if end - f < 5:
  *                 raise RuntimeError(u"Format string allocated too short.")             # <<<<<<<<<<<<<<
- * 
+ *
  *             # Until ticket #99 is fixed, use integers to avoid warnings
  */
   __pyx_tuple__15 = PyTuple_Pack(1, __pyx_kp_u_Format_string_allocated_too_shor_2); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(2, 847, __pyx_L1_error)
@@ -7844,7 +7844,7 @@ static int __Pyx_InitCachedConstants(void) {
  *         _import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
- * 
+ *
  * cdef inline int import_umath() except -1:
  */
   __pyx_tuple__16 = PyTuple_Pack(1, __pyx_kp_s_numpy_core_multiarray_failed_to); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(2, 1013, __pyx_L1_error)
@@ -7855,7 +7855,7 @@ static int __Pyx_InitCachedConstants(void) {
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
- * 
+ *
  * cdef inline int import_ufunc() except -1:
  */
   __pyx_tuple__17 = PyTuple_Pack(1, __pyx_kp_s_numpy_core_umath_failed_to_impor); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(2, 1019, __pyx_L1_error)
@@ -8024,12 +8024,12 @@ static int __pyx_pymod_exec_kdtree(PyObject *__pyx_pyinit_module)
   /*--- Function export code ---*/
   /*--- Type init code ---*/
   if (PyType_Ready(&__pyx_type_8pykdtree_6kdtree_KDTree) < 0) __PYX_ERR(0, 65, __pyx_L1_error)
-  __pyx_type_8pykdtree_6kdtree_KDTree.tp_print = 0;
+  //__pyx_type_8pykdtree_6kdtree_KDTree.tp_print = 0;
   if (PyObject_SetAttrString(__pyx_m, "KDTree", (PyObject *)&__pyx_type_8pykdtree_6kdtree_KDTree) < 0) __PYX_ERR(0, 65, __pyx_L1_error)
   if (__Pyx_setup_reduce((PyObject*)&__pyx_type_8pykdtree_6kdtree_KDTree) < 0) __PYX_ERR(0, 65, __pyx_L1_error)
   __pyx_ptype_8pykdtree_6kdtree_KDTree = &__pyx_type_8pykdtree_6kdtree_KDTree;
   /*--- Type import code ---*/
-  __pyx_ptype_7cpython_4type_type = __Pyx_ImportType(__Pyx_BUILTIN_MODULE_NAME, "type", 
+  __pyx_ptype_7cpython_4type_type = __Pyx_ImportType(__Pyx_BUILTIN_MODULE_NAME, "type",
   #if CYTHON_COMPILING_IN_PYPY
   sizeof(PyTypeObject),
   #else
@@ -8050,7 +8050,7 @@ static int __pyx_pymod_exec_kdtree(PyObject *__pyx_pyinit_module)
 
   /* "pykdtree/kdtree.pyx":18
  * # with this program.  If not, see <http://www.gnu.org/licenses/>.
- * 
+ *
  * import numpy as np             # <<<<<<<<<<<<<<
  * cimport numpy as np
  * from libc.stdint cimport uint32_t, int8_t, uint8_t
@@ -8072,7 +8072,7 @@ static int __pyx_pymod_exec_kdtree(PyObject *__pyx_pyinit_module)
 
   /* "../../../anaconda/envs/polar2grid_py36/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1021
  *         raise ImportError("numpy.core.umath failed to import")
- * 
+ *
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
  *     try:
  *         _import_umath()

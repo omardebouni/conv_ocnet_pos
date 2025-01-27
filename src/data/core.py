@@ -68,7 +68,7 @@ class Shapes3dDataset(data.Dataset):
 
         if os.path.exists(metadata_file):
             with open(metadata_file, 'r') as f:
-                self.metadata = yaml.load(f)
+                self.metadata = yaml.load(f, Loader=yaml.FullLoader)  # Add Loader=yaml.FullLoader
         else:
             self.metadata = {
                 c: {'id': c, 'name': 'n/a'} for c in categories
@@ -109,7 +109,12 @@ class Shapes3dDataset(data.Dataset):
             # proper resolution for feature plane/volume of the ENTIRE scene
             query_vol_metric = self.cfg['data']['padding'] + 1
             unit_size = self.cfg['data']['unit_size']
-            recep_field = 2**(cfg['model']['encoder_kwargs']['unet3d_kwargs']['num_levels'] + 2)
+            # Check if using 2D UNet instead of 3D
+            if 'unet_kwargs' in cfg['model']['encoder_kwargs']:
+                depth = cfg['model']['encoder_kwargs']['unet_kwargs']['depth']
+                recep_field = 2 ** (depth + 2)  # Calculate receptive field for 2D UNet
+            else:
+                recep_field = 64  # Default value (adjust as needed)
             if 'unet' in cfg['model']['encoder_kwargs']:
                 depth = cfg['model']['encoder_kwargs']['unet_kwargs']['depth']
             elif 'unet3d' in cfg['model']['encoder_kwargs']:
@@ -186,7 +191,10 @@ class Shapes3dDataset(data.Dataset):
         unit_size = self.cfg['data']['unit_size']
         field_name = self.cfg['data']['pointcloud_file']
         plane_type = self.cfg['model']['encoder_kwargs']['plane_type']
-        recep_field = 2**(self.cfg['model']['encoder_kwargs']['unet3d_kwargs']['num_levels'] + 2)
+        # Use 2D UNet depth instead of 3D UNet num_levels
+        unet_kwargs = self.cfg['model']['encoder_kwargs'].get('unet_kwargs', {})
+        depth = unet_kwargs.get('depth', 4)  # Default depth=4 if not specified
+        recep_field = 2 ** (depth + 2)
 
         if self.cfg['data']['multi_files'] is None:
             file_path = os.path.join(model_path, field_name)

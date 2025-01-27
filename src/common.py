@@ -403,17 +403,14 @@ class map2local(object):
 
     Args:
         s (float): the defined voxel size
-        pos_encoding (str): method for the positional encoding, linear|sin_cos
+        pos_encoding (str): method for the positional encoding, linear|sin_cos ----X NO 
     '''
-    def __init__(self, s, pos_encoding='linear'):
+    def __init__(self, s):
         super().__init__()
         self.s = s
-        self.pe = positional_encoding(basis_function=pos_encoding)
-
     def __call__(self, p):
         p = torch.remainder(p, self.s) / self.s # always possitive
         # p = torch.fmod(p, self.s) / self.s # same sign as input p!
-        p = self.pe(p)
         return p
 
 class positional_encoding(object):
@@ -422,11 +419,10 @@ class positional_encoding(object):
     Args:
         basis_function (str): basis function
     '''
-    def __init__(self, basis_function='sin_cos'):
+    def __init__(self, basis_function='sin_cos',L=10):
         super().__init__()
         self.func = basis_function
 
-        L = 10
         freq_bands = 2.**(np.linspace(0, L-1, L))
         self.freq_bands = freq_bands * math.pi
 

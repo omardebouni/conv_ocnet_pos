@@ -20,6 +20,7 @@ def get_model(cfg, device=None, dataset=None, **kwargs):
         device (device): pytorch device
         dataset (dataset): dataset
     '''
+    # print("DEBUUUUUUUFGGGGGG_______ cfg['model']:", cfg['model'])
     decoder = cfg['model']['decoder']
     encoder = cfg['model']['encoder']
     dim = cfg['data']['dim']
@@ -36,8 +37,9 @@ def get_model(cfg, device=None, dataset=None, **kwargs):
         pass
     # local positional encoding
     if 'local_coord' in cfg['model'].keys():
-        encoder_kwargs['local_coord'] = cfg['model']['local_coord']
-        decoder_kwargs['local_coord'] = cfg['model']['local_coord']
+        if cfg['model']['local_coord']:
+            encoder_kwargs['local_coord'] = cfg['model']['local_coord']
+            decoder_kwargs['local_coord'] = cfg['model']['local_coord']
     if 'pos_encoding' in cfg['model']:
         encoder_kwargs['pos_encoding'] = cfg['model']['pos_encoding']
         decoder_kwargs['pos_encoding'] = cfg['model']['pos_encoding']
@@ -45,21 +47,27 @@ def get_model(cfg, device=None, dataset=None, **kwargs):
     # update the feature volume/plane resolution
     if cfg['data']['input_type'] == 'pointcloud_crop':
         fea_type = cfg['model']['encoder_kwargs']['plane_type']
-        if (dataset.split == 'train') or (cfg['generation']['sliding_window']):
-            recep_field = 2**(cfg['model']['encoder_kwargs']['unet3d_kwargs']['num_levels'] + 2)
-            reso = cfg['data']['query_vol_size'] + recep_field - 1
-            if 'grid' in fea_type:
-                encoder_kwargs['grid_resolution'] = update_reso(reso, dataset.depth)
-            if bool(set(fea_type) & set(['xz', 'xy', 'yz'])):
-                encoder_kwargs['plane_resolution'] = update_reso(reso, dataset.depth)
-        # if dataset.split == 'val': #TODO run validation in room level during training
+        
+        # Get receptive field based on 2D UNet depth
+        if 'unet_kwargs' in cfg['model']['encoder_kwargs']:
+            depth = cfg['model']['encoder_kwargs']['unet_kwargs']['depth']
+            recep_field = 2 ** (depth + 2)  # For 2D UNet
+        # Optional: Handle 3D UNet if needed later
+        elif 'unet3d_kwargs' in cfg['model']['encoder_kwargs']:
+            depth = cfg['model']['encoder_kwargs']['unet3d_kwargs']['num_levels']
+            recep_field = 2 ** (depth + 2)
         else:
-            if 'grid' in fea_type:
-                encoder_kwargs['grid_resolution'] = dataset.total_reso
-            if bool(set(fea_type) & set(['xz', 'xy', 'yz'])):
-                encoder_kwargs['plane_resolution'] = dataset.total_reso
-    
+            raise ValueError("Neither 2D nor 3D UNet kwargs found in encoder config")
 
+        reso = cfg['data']['query_vol_size'] + recep_field - 1
+        
+        # Update resolutions for grid/plane features
+        if 'grid' in fea_type:
+            encoder_kwargs['grid_resolution'] = update_reso(reso, dataset.depth)
+        if bool(set(fea_type) & {'xz', 'xy', 'yz'}):
+            encoder_kwargs['plane_resolution'] = update_reso(reso, dataset.depth)
+    
+    print(decoder_kwargs)
     decoder = models.decoder_dict[decoder](
         dim=dim, c_dim=c_dim, padding=padding,
         **decoder_kwargs
@@ -116,14 +124,19 @@ def get_generator(model, cfg, device, **kwargs):
     '''
     
     if cfg['data']['input_type'] == 'pointcloud_crop':
-        # calculate the volume boundary
         query_vol_metric = cfg['data']['padding'] + 1
         unit_size = cfg['data']['unit_size']
-        recep_field = 2**(cfg['model']['encoder_kwargs']['unet3d_kwargs']['num_levels'] + 2)
-        if 'unet' in cfg['model']['encoder_kwargs']:
+        
+        # Handle 2D UNet case
+        if 'unet_kwargs' in cfg['model']['encoder_kwargs']:
             depth = cfg['model']['encoder_kwargs']['unet_kwargs']['depth']
-        elif 'unet3d' in cfg['model']['encoder_kwargs']:
+            recep_field = 2 ** (depth + 2)  # For 2D UNet
+        # Handle 3D UNet case (if needed later)
+        elif 'unet3d_kwargs' in cfg['model']['encoder_kwargs']:
             depth = cfg['model']['encoder_kwargs']['unet3d_kwargs']['num_levels']
+            recep_field = 2 ** (depth + 2)
+        else:
+            recep_field = 64  # Fallback
         
         vol_info = decide_total_volume_range(query_vol_metric, recep_field, unit_size, depth)
         
@@ -131,13 +144,14 @@ def get_generator(model, cfg, device, **kwargs):
         grid_reso = update_reso(grid_reso, depth)
         query_vol_size = cfg['data']['query_vol_size'] * unit_size
         input_vol_size = grid_reso * unit_size
-        # only for the sliding window case
         vol_bound = None
         if cfg['generation']['sliding_window']:
-            vol_bound = {'query_crop_size': query_vol_size,
-                         'input_crop_size': input_vol_size,
-                         'fea_type': cfg['model']['encoder_kwargs']['plane_type'],
-                         'reso': grid_reso}
+            vol_bound = {
+                'query_crop_size': query_vol_size,
+                'input_crop_size': input_vol_size,
+                'fea_type': cfg['model']['encoder_kwargs']['plane_type'],
+                'reso': grid_reso
+            }
 
     else: 
         vol_bound = None

@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from src.layers import ResnetBlockFC
 from torch_scatter import scatter_mean, scatter_max
-from src.common import coordinate2index, normalize_coordinate, normalize_3d_coordinate, map2local
+from src.common import coordinate2index, normalize_coordinate, normalize_3d_coordinate, map2local, positional_encoding
 from src.encoder.unet import UNet
 from src.encoder.unet3d import UNet3D
 
@@ -30,16 +30,30 @@ class LocalPoolPointnet(nn.Module):
 
     def __init__(self, c_dim=128, dim=3, hidden_dim=128, scatter_type='max', 
                  unet=False, unet_kwargs=None, unet3d=False, unet3d_kwargs=None, 
-                 plane_resolution=None, grid_resolution=None, plane_type='xz', padding=0.1, n_blocks=5):
+                 plane_resolution=None, grid_resolution=None, plane_type='xz', padding=0.1, n_blocks=5,local_coord=False, pos_encoding='linear', unit_size=0.1, L=10):
         super().__init__()
         self.c_dim = c_dim
 
-        self.fc_pos = nn.Linear(dim, 2*hidden_dim)
+
+        if local_coord:
+            self.map2local = map2local(unit_size)
+        else:
+            self.map2local = None
+        
+        if pos_encoding == 'sin_cos':
+            input_dim = 3 * 2 * L  # 3D * (sin+cos) * L frequencies
+            self.pe = positional_encoding(basis_function=pos_encoding,L=L)  # Make L configurable
+        else:
+            # self.fc_pos = nn.Linear(dim, 2*hidden_dim)
+            self.pe = None
+            input_dim = 3  # Raw 3D coordinates
+        self.fc_pos = nn.Linear(input_dim, 2*hidden_dim) # 3D * 2*L
         self.blocks = nn.ModuleList([
             ResnetBlockFC(2*hidden_dim, hidden_dim) for i in range(n_blocks)
         ])
+        
         self.fc_c = nn.Linear(hidden_dim, c_dim)
-
+        print('Noramal Encoder')
         self.actvn = nn.ReLU()
         self.hidden_dim = hidden_dim
 
@@ -135,6 +149,14 @@ class LocalPoolPointnet(nn.Module):
             coord['grid'] = normalize_3d_coordinate(p.clone(), padding=self.padding)
             index['grid'] = coordinate2index(coord['grid'], self.reso_grid, coord_type='3d')
         
+
+        if self.map2local:
+            # print("Applying map2local")
+            p = self.map2local(p)
+        if self.pe:
+            # print("Applying Positional Encoding")
+            p = self.pe(p)
+        # print(p.shape)
         net = self.fc_pos(p)
 
         net = self.blocks[0](net)
@@ -154,6 +176,9 @@ class LocalPoolPointnet(nn.Module):
             fea['xy'] = self.generate_plane_features(p, c, plane='xy')
         if 'yz' in self.plane_type:
             fea['yz'] = self.generate_plane_features(p, c, plane='yz')
+
+        # print(c.shape)
+        # print(fea)
 
         return fea
 
@@ -184,7 +209,7 @@ class PatchLocalPoolPointnet(nn.Module):
     def __init__(self, c_dim=128, dim=3, hidden_dim=128, scatter_type='max', 
                  unet=False, unet_kwargs=None, unet3d=False, unet3d_kwargs=None, 
                  plane_resolution=None, grid_resolution=None, plane_type='xz', padding=0.1, n_blocks=5, 
-                 local_coord=False, pos_encoding='linear', unit_size=0.1):
+                 local_coord=False, pos_encoding='linear', unit_size=0.1, L=10):
         super().__init__()
         self.c_dim = c_dim
 
@@ -199,6 +224,8 @@ class PatchLocalPoolPointnet(nn.Module):
         self.reso_grid = grid_resolution
         self.plane_type = plane_type
         self.padding = padding
+        self.unit_size= unit_size
+        self.L = L
 
         if unet:
             self.unet = UNet(c_dim, in_channels=c_dim, **unet_kwargs)
@@ -218,14 +245,18 @@ class PatchLocalPoolPointnet(nn.Module):
             raise ValueError('incorrect scatter type')
 
         if local_coord:
-            self.map2local = map2local(unit_size, pos_encoding=pos_encoding)
+            self.map2local = map2local(unit_size)
         else:
             self.map2local = None
         
         if pos_encoding == 'sin_cos':
-            self.fc_pos = nn.Linear(60, 2*hidden_dim)
+            input_dim = 3 * 2 * L  # 3D * (sin+cos) * L frequencies
+            self.pe = positional_encoding(basis_function=pos_encoding,L=L)  # Make L configurable
         else:
-            self.fc_pos = nn.Linear(dim, 2*hidden_dim)
+            # self.fc_pos = nn.Linear(dim, 2*hidden_dim)
+            self.pe = None
+            input_dim = 3  # Raw 3D coordinates
+        self.fc_pos = nn.Linear(input_dim, 2*hidden_dim) # 3D * 2*L
 
     def generate_plane_features(self, index, c):
         c = c.permute(0, 2, 1) 
@@ -284,16 +315,19 @@ class PatchLocalPoolPointnet(nn.Module):
 
     def forward(self, inputs):
         p = inputs['points']
+        # print('first p was: ', p.shape)
         index = inputs['index']
     
         batch_size, T, D = p.size()
 
         if self.map2local:
-            pp = self.map2local(p)
-            net = self.fc_pos(pp)
-        else:
-            net = self.fc_pos(p)
-
+            # print("Applying map2local")
+            p = self.map2local(p)
+        if self.pe:
+            # print("Applying Positional Encoding")
+            p = self.pe(p)
+        # print(p.shape)
+        net = self.fc_pos(p)
         net = self.blocks[0](net)
         for block in self.blocks[1:]:
             pooled = self.pool_local(index, net)

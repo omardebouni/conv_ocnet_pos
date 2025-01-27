@@ -39,7 +39,7 @@ class CheckpointIO(object):
 
     def load(self, filename):
         '''Loads a module dictionary from local file or url.
-        
+
         Args:
             filename (str): name of saved module dictionary
         '''
@@ -50,7 +50,7 @@ class CheckpointIO(object):
 
     def load_file(self, filename):
         '''Loads a module dictionary from file.
-        
+
         Args:
             filename (str): name of saved module dictionary
         '''
@@ -61,7 +61,7 @@ class CheckpointIO(object):
         if os.path.exists(filename):
             print(filename)
             print('=> Loading checkpoint from local file...')
-            state_dict = torch.load(filename)
+            state_dict = torch.load(filename, map_location=torch.device('cpu'))
             scalars = self.parse_state_dict(state_dict)
             return scalars
         else:
@@ -69,19 +69,19 @@ class CheckpointIO(object):
 
     def load_url(self, url):
         '''Load a module dictionary from url.
-        
+
         Args:
             url (str): url to saved model
         '''
         print(url)
         print('=> Loading checkpoint from url...')
-        state_dict = model_zoo.load_url(url, progress=True)
+        state_dict = model_zoo.load_url(url, progress=True, map_location=torch.device('cpu'))
         scalars = self.parse_state_dict(state_dict)
         return scalars
 
     def parse_state_dict(self, state_dict):
         '''Parse state_dict of model and return scalars.
-        
+
         Args:
             state_dict (dict): State dict of model
     '''
