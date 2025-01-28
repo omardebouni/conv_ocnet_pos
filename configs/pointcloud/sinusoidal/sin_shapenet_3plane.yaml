@@ -3,36 +3,36 @@ data:
   input_type: pointcloud
   classes: ['04379243', '02958343', '02691156']
   path: data/ShapeNet
-  pointcloud_n: 300
+  pointcloud_n: 3000
   pointcloud_noise: 0.005
-  points_subsample: 1024
+  points_subsample: 2048
   points_file: points.npz
   points_iou_file: points.npz
   voxels_file: null
 model:
   encoder: pointnet_local_pool
   encoder_kwargs:
-    hidden_dim: 16
+    hidden_dim: 32
     plane_type: ['xz', 'xy', 'yz']
-    plane_resolution: 32
+    plane_resolution: 64
     unet: True
     unet_kwargs:
-      depth: 2
+      depth: 4
       merge_mode: concat
-      start_filts: 16
+      start_filts: 32
   decoder: simple_local
   decoder_kwargs:
     sample_mode: bilinear # bilinear / nearest
-    hidden_size: 16
+    hidden_size: 32
     use_siren: true
     w0: 30.0
-  c_dim: 16
+  c_dim: 32
 training:
   out_dir: out/pointcloud/sin/shapenet_3plane
-  batch_size: 16
+  batch_size: 32
   model_selection_metric: iou
   model_selection_mode: maximize
-  print_every: 10
+  print_every: 1000
   visualize_every: 10000
   validate_every: 10000
   checkpoint_every: 2000
